@@ -1,0 +1,23 @@
+{
+  "name": "captcha-gated-tenant-signup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/tenant_signup_service.ts",
+    "example": "node --experimental-strip-types src/try_signup.ts",
+    "test": "node --experimental-strip-types --test src/tenant_onboarding.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT"
+}

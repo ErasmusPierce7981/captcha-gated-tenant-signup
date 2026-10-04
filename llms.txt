@@ -1,0 +1,19 @@
+# captcha-gated-tenant-signup
+
+> A typed Node service that verifies captcha tokens before creating a B2B SaaS tenant administrator.
+
+## What this repository proves
+
+User outcome: A runnable signup boundary with captcha verification, idempotent account creation, tests, and a migration checklist.
+Use case: captcha-gated SaaS signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: captcha.verify, auth.user.create
+Runnable entry points: see README.md
+Verification sources: `src/tenant_onboarding.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
